@@ -43,6 +43,54 @@
 
     padding: 20px;
      } 
+     #section-project{
+        display: flex;
+
+     }
+
+     .two-projects{
+        display: flex;
+     }
+
+    .two-projects>div{
+        width: 50%;
+        /* border: 2px solid ; */
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+     .two-projects img{
+        height: 300px;
+     }
+     #section-projects{
+
+        margin: 20px;
+     }
+     .two-projects>div:first-child{
+        background-color:#ecebfd;
+        margin-right: 10px;
+     }
+
+     .two-projects>div:last-child{
+        background-color: #53134745;
+        color: #fff;
+        margin-left: 10px;
+     }
+
+     .third-project{
+        padding: 20px;
+        /* background-color: #000; */
+        background-image:linear-gradient(to bottom right, red, rgb(13, 0, 128)) ;
+        color: #fff;
+        margin: 20px 0; 
+        border-radius: 20px;
+        /* margin: 20px 0; shortcut for upper and lower and the left/right will be zero   */
+
+
+     }
+     .third-project img{
+        height:400px ;
+     }
 
     </style>
 </head>
@@ -85,12 +133,13 @@
     </div>
 </section>
 <section id="section-projects">
-<div> 
+
+<div class="two-projects"> 
     <!-- first project -->
     <div>
-<h1>Paymento</h1>
-<p>Personal Finance Mobile App</p>
-<img src="images/paymento.png" alt="">
+        <h1>Paymento</h1>
+        <p>Personal Finance Mobile App</p>
+        <img src="images/paymento.png" alt="">
     </div>
     <div>
         <h1>Taskit</h1>
@@ -100,7 +149,7 @@
 
 </div>
 
-<div>
+<div class="third-project">
    <!-- third project -->
    <h1>Piyuu</h1>
    <p>Freelancing platform for individual</p>
